@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333; line-height: 1.6; padding: 40px; }
+        .header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 40px; }
+        .school-name { font-weight: bold; font-size: 20px; margin: 0; }
+        .gstin { color: #888; font-size: 12px; }
+        .powered-by { font-size: 10px; color: #aaa; text-align: right; }
+        
+        .receipt-title { font-size: 18px; font-weight: bold; margin-bottom: 5px; }
+        .ref-no { font-weight: normal; color: #666; font-size: 14px; }
+        .memo { color: #666; font-size: 13px; margin-bottom: 30px; }
+        
+        .amount-summary { border-bottom: 2px solid #007bff; width: fit-content; margin-bottom: 30px; padding-bottom: 5px; }
+        .amount-label { color: #888; font-size: 11px; text-transform: uppercase; font-weight: bold; }
+        .amount-value { font-size: 18px; font-weight: bold; }
+
+        .info-grid { display: flex; gap: 150px; margin-bottom: 40px; }
+        .info-label { color: #888; font-size: 11px; text-transform: uppercase; font-weight: bold; display: block; }
+        .info-value { font-size: 14px; margin-top: 5px; }
+
+        table { width: 100%; border-collapse: collapse; margin-bottom: 30px; }
+        thead { background-color: #f2f2f2; }
+        th { text-align: left; padding: 10px; font-size: 11px; color: #888; text-transform: uppercase; }
+        td { padding: 15px 10px; font-size: 14px; border-bottom: 1px solid #eee; }
+        .text-right { text-align: right; }
+
+        .totals-section { float: right; width: 300px; margin-top: 20px; }
+        .total-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+        .total-label { font-weight: bold; font-size: 16px; }
+        .total-price { font-weight: bold; font-size: 16px; }
+        .paid-label { color: #2ecc71; font-size: 13px; }
+        .paid-amount { color: #2ecc71; font-size: 13px; }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div>
+            <p class="school-name">Upadhye School of Dance</p>
+            <p class="gstin">GSTIN - 29AAGFU6936R1Z2</p>
+        </div>
+        <div class="powered-by">
+            Invoicing and payments<br>powered by
+        </div>
+    </div>
+
+    <div class="receipt-title">
+        Payment Receipt <span class="ref-no">Transaction Reference: pay_Mes190yAOLUZKM</span>
+    </div>
+    <div class="memo">This is a payment receipt for your transaction on S6-7 Oct - Dec; Term Fee INR</div>
+
+    <div class="amount-summary">
+        <span class="amount-label">Amount Paid</span>
+        <div class="amount-value">₹ 6,000.00</div>
+    </div>
+
+    <div class="info-grid">
+        <div>
+            <span class="info-label">Issued To</span>
+            <div class="info-value">
+                sowmyayagnik745@gmail.com<br>
+                +918618276657
+            </div>
+        </div>
+        <div>
+            <span class="info-label">Paid On</span>
+            <div class="info-value">21 Sep 2023</div>
+        </div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Description</th>
+                <th class="text-right">Unit Price</th>
+                <th class="text-right">Qty</th>
+                <th class="text-right">Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Amount</td>
+                <td class="text-right">₹ 6,000.00</td>
+                <td class="text-right">1</td>
+                <td class="text-right">₹ 6,000.00</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="totals-section">
+        <div class="total-row">
+            <span class="total-label">Total</span>
+            <span class="total-price">₹ 6,000.00</span>
+        </div>
+        <div class="total-row">
+            <span class="paid-label">Amount Paid</span>
+            <span class="paid-amount">₹ 6,000.00</span>
+        </div>
+    </div>
+
+</body>
+</html>
